@@ -1,0 +1,28 @@
+@use 'sass:math';
+
+$white: #ffffff;
+$black: #000000;
+
+$mobile: 425px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin size($sizeRequested) {
+  letter-spacing: 0;
+  font-size: math.div($sizeRequested, 16) + rem;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--font-playfair-display);
+}
+
+p, a, li, span {
+  font-family: var(--font-lato);
+}

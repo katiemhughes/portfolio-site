@@ -1,0 +1,23 @@
+@import 'app/variables.scss';
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 120px 40px 40px 40px;
+
+    &__image {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+        background-color: $white;
+        padding: 1%;
+
+        @media screen and (min-width: $mobile) {
+            width: 40%;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 20%;
+        }
+    }
+}
