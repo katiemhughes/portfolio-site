@@ -1,14 +1,18 @@
 import Link from 'next/link'
 import './Navbar.scss'
 
-export default function Navbar() {
+export type NavbarItem = {
+  label: string,
+  href: string
+}
+type NavbarProps = {
+  items: NavbarItem[]
+}
+export default function Navbar({ items }: NavbarProps) {
   return (
     <nav className='nav'>
         <div className='nav__inner'>
-            <Link className='inner__item' href='/'>Home</Link>
-            <Link className='inner__item' href='/about'>About</Link>
-            <Link className='inner__item' href='/projects'>Projects</Link>
-            <Link className='inner__item' href='/blog-page'>Blog</Link>
+          {items.map((item, index) => <Link key={index} className='inner__item' href={item.href}>{item.label}</Link>)}
         </div>
     </nav>
   )
