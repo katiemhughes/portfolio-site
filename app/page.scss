@@ -9,11 +9,19 @@
     align-items: center;
 
     &__intro {
-        @include size(32);
+        @include size(24);
         color: $white;
         text-align: center;
-        width: 50vw;
+        width: 75vw;
         height: 100%;
+
+        @media screen and (min-width: $smallDesktop) {
+            @include size(32);
+        }
+
+        @media screen and (min-width: $largeDesktop) {
+            margin-top: 40px;
+        }
 
         &--lilac {
             color: #ecbcfd;

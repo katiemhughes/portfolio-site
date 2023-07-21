@@ -3,9 +3,9 @@
 $white: #ffffff;
 $black: #000000;
 
-$mobile: 425px;
-$tablet: 768px;
-$desktop: 1024px;
+$tablet: 425px;
+$smallDesktop: 768px;
+$largeDesktop: 1024px;
 
 @mixin size($sizeRequested) {
   letter-spacing: 0;

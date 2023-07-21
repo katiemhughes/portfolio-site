@@ -3,7 +3,7 @@
 .profile {
     display: flex;
     justify-content: center;
-    margin: 120px 40px 40px 40px;
+    margin: 160px 40px 40px 40px;
 
     &__image {
         width: 80%;
@@ -12,11 +12,11 @@
         background-color: $white;
         padding: 1%;
 
-        @media screen and (min-width: $mobile) {
+        @media screen and (min-width: $tablet) {
             width: 40%;
         }
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $smallDesktop) {
             width: 20%;
         }
     }
