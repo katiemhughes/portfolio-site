@@ -10,7 +10,8 @@
       "rules": {
         "react/react-in-jsx-scope": "off",
         "no-console": "off",
-        "react/no-array-index-key": "off"
+        "react/no-array-index-key": "off",
+        "import/no-extraneous-dependencies": "off"
       },
       "files": ["*.ts", "*.tsx"],
       "parserOptions": {
