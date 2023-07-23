@@ -14,7 +14,7 @@ export default function Home() {
                   loop={Infinity}
                   wrapper="b"
                   steps={[
-                      "a full stack developer",
+                      "a frontend developer",
                       2000,
                       "an accessibility advocate",
                       2000,
