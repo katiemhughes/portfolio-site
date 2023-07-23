@@ -1,9 +1,9 @@
 import './projects.scss';
 
 export default function Loading() {
-    return (
-        <div className='loader'>
-            <div className='loader__spinner'></div>
-        </div>
-    );
+  return (
+    <div className="loader">
+      <div className="loader__spinner" />
+    </div>
+  );
 }
