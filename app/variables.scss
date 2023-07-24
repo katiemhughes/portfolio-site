@@ -2,6 +2,7 @@
 
 $white: #ffffff;
 $black: #000000;
+$lightBlack: #10171E;
 $lilac: #ecbcfd;
 
 $tablet: 425px;
@@ -19,9 +20,16 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2 {
   margin: 0;
   font-family: var(--font-playfair-display);
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--font-lato);
+  font-weight: 700;
+  font-size: 22px;
 }
 
 p, a, li, span {

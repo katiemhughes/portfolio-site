@@ -16,10 +16,16 @@
         }
     }
 
-    &__section {
+    &__section {    
+        border-radius: 5px;
+        background: $lightBlack;
+        padding: 12px 24px;
         font-size: 18px;
+        margin: 12px;
 
-        margin: 20px 40px 40px 40px;
+        @media screen and (min-width: $tablet) {
+            margin: 20px 40px 40px 40px;
+        }
 
         @media screen and (min-width: $largeDesktop) {
             margin: 20px 60px 60px 60px;

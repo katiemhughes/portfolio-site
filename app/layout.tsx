@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Lato } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
 import ProfilePic from './components/profile-pic/ProfilePic';
-import type { NavbarItem } from './components/navbar/Navbar';
+import type { NavbarLink } from './components/navbar/Navbar';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -14,7 +14,7 @@ const playfairDisplay = Playfair_Display({
 
 const lato = Lato({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '700'],
   style: ['normal'],
   variable: '--font-lato',
 });
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description: 'Portfolio built with Next.js and Typescript, by Katie Hughes.',
 };
 
-const items: NavbarItem[] = [
+const links: NavbarLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Projects', href: '/projects' },
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfairDisplay.variable} ${lato.variable}`}>
-        <Navbar items={items} />
+        <Navbar links={links} />
         <ProfilePic />
         {children}
       </body>
