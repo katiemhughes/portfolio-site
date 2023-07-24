@@ -1,16 +1,15 @@
-/* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable react/self-closing-comp */
 import './skeleton-card.scss';
 
 export default function SkeletonCard({ loading }: { loading: boolean }) {
   return loading ? (
-    <article className="is-loading">
-      <div className="is-loading__image"></div>
+    <article aria-label="Skeleton loading card" className="is-loading">
+      <div aria-label="Skeleton loading card image" className="is-loading__image" />
       <div className="is-loading__content">
-        <h3 className="is-loading__title"></h3>
-        <p className="is-loading__text"></p>
-        <p className="is-loading__text"></p>
-        <p className="is-loading__text"></p>
+        <h3 aria-label="Skeleton loading card title" className="is-loading__title">Skeleton loading card</h3>
+        <p aria-label="Skeleton loading card text" className="is-loading__text">Skeleton loading text</p>
+        <p aria-label="Skeleton loading card text" className="is-loading__text">More skeleton loading text</p>
+        <p aria-label="Skeleton loading card text" className="is-loading__text">More skeleton loading text</p>
       </div>
     </article>
   ) : null;

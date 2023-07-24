@@ -12,7 +12,7 @@
         }
 
         &--lilac {
-            color: #ecbcfd;
+            color: $lilac;
         }
     }
 
@@ -37,6 +37,10 @@
         transition: color 0.2s ease-in-out;
 
         &:hover {
+            color: $white;
+        }
+
+        &:focus {
             color: $white;
         }
 

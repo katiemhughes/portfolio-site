@@ -3,7 +3,7 @@ import './about.scss';
 export default function Loading() {
   return (
     <div className="loader">
-      <div className="loader__spinner" />
+      <div aria-label="Loader spinner" className="loader__spinner" />
     </div>
   );
 }
