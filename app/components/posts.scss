@@ -47,7 +47,7 @@
 
 .blog {
     &__post {
-        margin: 120px;
+        margin: 120px 40px 40px 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -88,17 +88,27 @@
         }
 
         img {
-            max-width: 400px;
+            max-width: 300px;
             max-height: 600px;
         }
 
         p {
             vertical-align: middle;
             display: table-cell;
+            max-width: 300px;
+
+            @media screen and (min-width: $tablet) {
+                max-width: 2000px;
+            }
         }
 
         img {
             margin-top: 36px;
+            max-width: 220px;
+
+            @media screen and (min-width: $tablet) {
+                max-width: 500px;
+            }
         }
 
         img[alt="skeleton-card"] {
@@ -106,13 +116,21 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            max-width: 220px;
+
+            @media screen and (min-width: $tablet) {
+                max-width: 500px;
+            }
         }
 
         em {
-            display: block;
+            display: flex;
             max-width: 400px;
+            align-self: center;
             margin: 10px 0px 36px 0px;
             text-align: center;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
