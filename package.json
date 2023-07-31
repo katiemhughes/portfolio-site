@@ -13,6 +13,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.7",
     "eslint-config-next": "13.4.9",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gray-matter": "^4.0.3",
     "next": "13.4.9",
     "react": "18.2.0",
