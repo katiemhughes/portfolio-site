@@ -1,0 +1,118 @@
+@import 'app/variables.scss';
+
+.posts {
+    &__shortened {
+        width: 100%;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__post {
+        background: $lightBlack;
+        padding: 0px 20px 20px 20px;
+        margin: 20px;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    &__title {
+        text-decoration: none;
+        color: $lilac;
+        @include size(24);
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: #8900F2;
+        }
+
+        &:visited {
+            color: $lilac;
+        }
+    }
+}
+
+.blog {
+    &__post {
+        margin: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $lightBlack;
+        border-radius: 5px;
+        padding: 24px;
+
+        h1, h2, h3 {
+            color: $lilac;
+            font-family: var(--font-lato);
+            margin-top: 20px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+        }
+
+        a {
+            padding: 6px;
+            margin-top: 36px;
+            text-decoration: none;
+            color: $lilac;
+            border-radius: 4px;
+            border: solid 1px $white;
+            font-weight: bold;
+            width: 115px;
+
+            &:hover {
+                background: $lilac;
+                color: $lightBlack;
+            }
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 600px;
+        }
+
+        p {
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        img {
+            margin-top: 36px;
+        }
+
+        img[alt="skeleton-card"] {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        em {
+            display: block;
+            max-width: 400px;
+            margin: 10px 0px 36px 0px;
+            text-align: center;
+        }
+    }
+}
