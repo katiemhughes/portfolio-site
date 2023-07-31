@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import './profilepic.scss';
+import 'app/about/about.scss';
+import 'app/page.scss';
 
 export default function ProfilePic() {
   return (

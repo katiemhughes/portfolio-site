@@ -95,14 +95,12 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
-  console.log('projects', projects);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 1500);
   }, []);
 
   return (

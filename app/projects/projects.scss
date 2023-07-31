@@ -4,7 +4,7 @@
     &__title {
         @include size(60);
         text-align: center;
-        margin-bottom: 40px;
+        margin: 120px 0px 40px 0px;
         white-space: nowrap;
 
         @media screen and (min-width: $tablet) {

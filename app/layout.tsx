@@ -2,7 +2,6 @@ import './variables.scss';
 import type { Metadata } from 'next';
 import { Playfair_Display, Lato } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
-import ProfilePic from './components/profile-pic/ProfilePic';
 import type { NavbarLink } from './components/navbar/Navbar';
 
 const playfairDisplay = Playfair_Display({
@@ -28,7 +27,7 @@ const links: NavbarLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Blog', href: '/blog-page' },
+  { label: 'Blog', href: '/blog' },
 ];
 
 export default function RootLayout({
@@ -40,7 +39,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.variable} ${lato.variable}`}>
         <Navbar links={links} />
-        <ProfilePic />
         {children}
       </body>
     </html>

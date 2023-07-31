@@ -4,10 +4,12 @@
 
 import Typical from 'react-typical';
 import './page.scss';
+import ProfilePic from './components/profile-pic/ProfilePic';
 
 export default function Home() {
   return (
     <main className="home">
+      <ProfilePic />
       <div className="home__intro">
         <h1>
           Hello
