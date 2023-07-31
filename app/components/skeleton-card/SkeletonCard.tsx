@@ -1,7 +1,6 @@
-/* eslint-disable react/self-closing-comp */
 import './skeleton-card.scss';
 
-export default function SkeletonCard({ loading }: { loading: boolean }) {
+export default function SkeletonAbout({ loading }: { loading: boolean }) {
   return loading ? (
     <article aria-label="Skeleton loading card" className="is-loading">
       <div aria-label="Skeleton loading card image" className="is-loading__image" />
