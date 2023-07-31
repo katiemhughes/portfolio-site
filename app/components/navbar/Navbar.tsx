@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import './Navbar.scss';
+import './navbar.scss';
 
 export type NavbarLink = {
   label: string,
