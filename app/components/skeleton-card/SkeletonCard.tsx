@@ -1,6 +1,6 @@
 import './skeleton-card.scss';
 
-export default function SkeletonAbout() {
+export default function SkeletonCard() {
   return (
     <article aria-label="Skeleton loading card" className="is-loading">
       <div aria-label="Skeleton loading card image" className="is-loading__image" />

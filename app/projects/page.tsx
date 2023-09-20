@@ -112,7 +112,7 @@ export default function Projects() {
       <section className="projects__cards">
         {projects.map((project, index) => (
           loading
-            ? <SkeletonCard loading={loading} />
+            ? <SkeletonCard key={index} />
             : <Tilt><ProjectCard key={index} project={project} /></Tilt>
         ))}
       </section>
