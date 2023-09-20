@@ -34,34 +34,25 @@ For this website, I implemented three different skeleton loaders:
 
 1. One for my card components
 2. One for the content on my About page
-3. One for my blog posts on my main /blog page.
+3. One for each of my blog posts on my main `/blog` page.
 
 ![about-loader](/images/about-loader.png)
 *My custom-built About content skeleton loader*
 
-## The card loader
+## Building the templates
 
-In Next.js, you can create routes via a file-based system. You can name a directory what you would like your route segment to be named (for example, you could name your About directory about, which would then translate to /about in your router).
+I created bespoke templates for each of my skeleton loaders because they needed to match the size and content type of each different element.
 
-As long as all of your route directories are placed inside your app directory, and NOT inside your components directory, then you can create as many as you like (I will explain the components directory in another blog post).
+The About skeleton, for example, was quite wide and tall because my About page content takes up a large amount of the web page. It also only contains text, so the skeleton SCSS styling was pretty simple - just some thin lines to represent where the text should sit on the page when loaded.
 
-To create UI for each route, inside each individually-named directory you must add a page.tsx or page.jsx/js file. This naming convention must always stay the same. In here, you can create your entire UI just as you would in React.
+Whereas, the card component contains an image and text, so I included both of those in the skeleton design, as well as giving the card skeleton a small width to match the shape of the card.
 
-You should call the function the same name as your directory, just starting with a capital letter. This is done like so:
+## Rendering the skeleton
 
-```
-export default function About() {
+I decided to render each page's skeleton using state, and the traditional React `useEffect()` hook. Since Next.js isn't client-side rendered by default, I needed to specify this at the top of each file. This is done by writing `'use client;'`.
 
-  return (
-    <main className="about"></main>
-  );
-}
-```
+I initially set the loading state to true, so that the component is loading on first load of the page. Inside the `useEffect()` hook, I set the state to false.
 
-Once you have created all of your tsx or jsx in here, you can then move onto adding your loading UI. In Next.js, this is done in a similar way to adding the page.tsx - you can add a file called loading.tsx. In here, you can add a custom loading UI.
+For this website, my skeleton loaders are for demonstration purpose only, since I am not loading any huge chunks of content, and I'm not grabbing any data from APIs. To mimic a longer loading time, I've placed a `setTimeout()` inside each `useEffect()`, and inside here is where I set the loading state to false.
 
-## The issue with `loading.tsx` file
-
-The issue with using the loading.tsx file is that the UI inside here is applied to the entire web page. This means that you're very restrained when using this, and you're unable to apply this loading page to only certain components. It also means that you're also unable to use state to control when to show your loading component.
-
-Because of these restrictions, I ended up opting for the traditional React method with the useEffect() hook and a loading state, when 
+Each `setTimeout()` is set to 1.5 seconds, so that you can have a peep at what my custom-built skeletons look like!
