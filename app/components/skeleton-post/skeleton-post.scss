@@ -1,0 +1,38 @@
+@import 'app/variables.scss';
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 32px 0px;
+      margin: 32px;
+      width: 70%;
+      background: $lightBlack;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    &__text {
+      text-indent: -5000px;
+      background: #15202B;
+      background: linear-gradient(110deg, #1a2631 8%, #233343 18%, #1a2631 33%);
+      border-radius: 5px;
+      background-size: 200% 100%;
+      animation: 1.5s shine linear infinite;
+      width: 85%;
+      height: 20px;
+    }
+}
+  
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
