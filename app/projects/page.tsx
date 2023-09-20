@@ -103,6 +103,8 @@ export default function Projects() {
     }, 1500);
   }, []);
 
+  // delete loading prop!
+
   return (
     <main className="projects">
       <h1 className="projects__title">
