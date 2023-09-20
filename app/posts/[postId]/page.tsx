@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import getFormattedDate from '@/lib/getFormattedDate';
 import Link from 'next/link';
-import getSortedPostsData, { getPostData } from '../../../lib/posts';
+import getSortedPostsData from '../../../lib/posts';
 import 'app/components/posts.scss';
 
-export function generateStaticParams() {
-  const posts = getSortedPostsData(); // deduped
+export async function generateStaticParams() {
+  const posts = await getSortedPostsData(); // deduped
 
   return posts.map((post) => ({
     postId: post.id,
@@ -29,31 +29,20 @@ export async function generateMetadata({ params }: { params: { postId: string } 
   };
 }
 
-export async function PostParagraphs(
-  { params }: { params: { postId: string } },
-) {
-  const posts = await getSortedPostsData(); // deduped
-  const { postId } = params;
-  const { htmlParagraphsFormatted } = await getPostData(postId);
-
-  if (!posts.find((post) => post.id === postId)) {
-    return notFound();
-  }
-
-  return (
-    <div className="posts__shortened" dangerouslySetInnerHTML={{ __html: htmlParagraphsFormatted }} />
-  );
-}
-
 export default async function Post({ params }: { params: { postId: string } }) {
   const posts = await getSortedPostsData(); // deduped
   const { postId } = params;
 
-  if (!posts.find((post) => post.id === postId)) {
+  const blogPost = posts.find((post) => post.id === postId);
+  // console.log('blog post', blogPost);
+
+  if (!blogPost) {
     return notFound();
   }
 
-  const { title, date, contentHtml } = await getPostData(postId);
+  // here??
+
+  const { title, date, contentHtml } = blogPost;
 
   const pubDate = getFormattedDate(date);
 

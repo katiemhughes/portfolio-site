@@ -23,7 +23,7 @@ export default function About() {
         About Me
         <span className="about__title--lilac">.</span>
       </h1>
-      {loading ? <SkeletonAbout loading={loading} /> : (
+      {loading ? <SkeletonAbout /> : (
         <section className="about__section">
           <p>I&apos;m Katie, a junior developer who is currently working in Optimisation and A/B testing.</p>
           <p>At the beginning of the COVID-19 lockdown, I lost my job. I&apos;d been doing temporary office work for a few years because I didnt know what I wanted to do after uni (I had studied Spanish and French, so I wasn&apos;t left with a very clear career path). So, instead of letting this get me down, I decided that this was the perfect opportunity for a career change.</p>

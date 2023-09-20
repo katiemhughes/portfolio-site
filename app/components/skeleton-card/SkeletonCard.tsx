@@ -1,7 +1,7 @@
 import './skeleton-card.scss';
 
-export default function SkeletonAbout({ loading }: { loading: boolean }) {
-  return loading ? (
+export default function SkeletonAbout() {
+  return (
     <article aria-label="Skeleton loading card" className="is-loading">
       <div aria-label="Skeleton loading card image" className="is-loading__image" />
       <div className="is-loading__content">
@@ -11,5 +11,5 @@ export default function SkeletonAbout({ loading }: { loading: boolean }) {
         <p aria-label="Skeleton loading card text" className="is-loading__text">More skeleton loading text</p>
       </div>
     </article>
-  ) : null;
+  );
 }

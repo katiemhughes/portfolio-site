@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import getFormattedDate from '@/lib/getFormattedDate';
-import { PostParagraphs } from '../posts/[postId]/page';
+import { BlogPost } from '@/lib/posts';
+import PostParagraphs from './PostParagraphs';
 import 'app/components/posts.scss';
 
 type Props = {
@@ -17,9 +18,7 @@ export default function ListItem({ post }: Props) {
       <Link className="posts__title" href={`/posts/${id}`}>{title}</Link>
       <br />
       <PostParagraphs
-        params={{
-          postId: `${id}`,
-        }}
+        post={post}
       />
     </li>
   );
