@@ -22,10 +22,10 @@ As I mentioned previously, I used the `<Link />` component from the `react-scrol
 
 
 ```
-    <NavLink 
-        className="sublinks__link"
-        to="/moll"
-    >
+<NavLink 
+    className="sublinks__link"
+    to="/moll"
+>
 ```
 
 
