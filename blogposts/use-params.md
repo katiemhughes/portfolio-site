@@ -1,5 +1,5 @@
 ---
-title: 'Using the useParams() hook with React Router to implement dynamic routing (with the help of Contentful CMS)'
+title: 'Dynamic routing with React Router and Contentful'
 date: '2023-10-11'
 ---
 
