@@ -30,19 +30,19 @@ export default function About() {
           <p>
             I had recently taken up music production as a hobby, live coding music on a program called
             {' '}
-            <a className="about__link" href="https://sonic-pi.net/">Sonic Pi</a>
+            <a className="about__link" href="https://sonic-pi.net/" target="_blank" rel="noreferrer">Sonic Pi</a>
             . So, I decided to put this skill to good use. I did some FreeCodeCamp courses and followed some YouTube tutorials on how to make websites using HTML, Javascript and CSS, and then landed a scholarship for a bootcamp. The scholarship was awarded by an organisation called
             {' '}
-            <a className="about__link" href="https://digitalher.co.uk/">Digital Her</a>
+            <a className="about__link" href="https://digitalher.co.uk/" target="_blank" rel="noreferrer">Digital Her</a>
             , and the bootcamp was the 3-month Develop course at
             {' '}
-            <a className="about__link" href="https://wearecodenation.com/">Code Nation</a>
+            <a className="about__link" href="https://wearecodenation.com/" target="_blank" rel="noreferrer">Code Nation</a>
             .
           </p>
           <p>
             After completing the bootcamp, I then obtained an apprenticeship following a year long placement. I then finally landed my job at
             {' '}
-            <a className="about__link" href="https://www.eclipsegroup.co.uk/">Eclipse Group Solutions</a>
+            <a className="about__link" href="https://www.eclipsegroup.co.uk/" target="_blank" rel="noreferrer">Eclipse Group Solutions</a>
             , where I currently work as a Junior Optimisation Developer.
           </p>
           <p>I do find A/B testing interesting, particularly because it&apos;s interesting to monitor users behaviour while browsing a website. However, I&apos;m now ready for a change, and I&apos;m actively looking for a role where I can use React and Typescript, rather than solely working with vanilla Javascript, which is what I&apos;m currently doing.</p>

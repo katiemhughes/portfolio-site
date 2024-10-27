@@ -1,70 +1,73 @@
-@import 'app/variables.scss';
+@import "app/variables.scss";
 
 .project {
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 2px;
-        border: 1px solid $white;    
-    }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid $white;
+  }
 }
 
 .card {
-    &__text-container {
-        background: $lightBlack;
-        min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &__text-container {
+    background: $lightBlack;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__image {
-        width: 100%;
-        height: auto;
-        min-height: 280px;
-        object-fit: cover;
-    }
+  &__image {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
+  }
 
-    &__title {
-        padding-top: 24px;
-        text-align: center;
-    }
+  &__title {
+    padding-top: 24px;
+    text-align: center;
+  }
 
-    &__content {
-        margin: 0;
-        padding: 14px 14px 0px 14px;
-        text-align: center;
-    }
+  &__content {
+    margin: 0;
+    padding: 14px 14px 0px 14px;
+    text-align: center;
+  }
 
-    &__links {
-        display: flex;
-    }
+  &__links {
+    display: flex;
+  }
 
-    &__link {
-        margin: 8px 8px 24px 8px;
-        padding: 6px;
-        text-decoration: none;
-        background-color: $lilac;
-        color: $black;
-        border-radius: 4px;
-        font-weight: bold;
-    }
+  &__link {
+    margin: 8px 8px 24px 8px;
+    padding: 6px;
+    text-decoration: none;
+    background-color: $lilac;
+    color: $black;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 
-    &__code {
-        display: flex;
-    }
+  &__code {
+    display: flex;
+  }
 }
 
 .code {
-    &__link {
-        margin: 8px;
-        padding: 6px;
-        text-decoration: none;
-        color: $lilac;
-        border-radius: 4px;
-        border: solid 1px $white;
-        font-weight: bold;
-    }
+  &__link {
+    margin: 8px;
+    padding: 6px;
+    text-decoration: none;
+    color: $lilac;
+    border-radius: 4px;
+    border: solid 1px $white;
+    font-weight: bold;
+  }
 }
