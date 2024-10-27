@@ -24,12 +24,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="card__title">{project.cardTitle}</h3>
         <p className="card__content">{project.cardContent}</p>
         <div className="card__code">
-          <a className="code__link" href={project.sourceCodeHref}>Source code</a>
-          <a className="code__link" href={project.liveSiteHref}>Live site</a>
+          <a className="code__link" href={project.sourceCodeHref} target="_blank" rel="noreferrer">Source code</a>
+          <a className="code__link" href={project.liveSiteHref} target="_blank" rel="noreferrer">Live site</a>
         </div>
         <div className="card__links">
           {project.tech.map((techType, index) => (
-            <a className="card__link" key={index} href={techType.link}>{techType.text}</a>
+            <a className="card__link" key={index} href={techType.link} target="_blank" rel="noreferrer">{techType.text}</a>
           ))}
         </div>
       </div>
