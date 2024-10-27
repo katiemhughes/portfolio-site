@@ -92,6 +92,28 @@ const projects: Project[] = [
       },
     ],
   },
+  {
+    imageSrc: '/images/neurodiversity.png',
+    imageAlt: 'Neurodiversity Friendly Task Matrix',
+    cardTitle: 'Neurodiversity Friendly Task Matrix',
+    cardContent: 'A tool that I created to help neurodivergent people to complete tasks based on their interest and energy levels. I created this because I am AuDHD myself, and I was unable to find a tool to do this. I hope that the tool will help other neurodivergent people too!',
+    sourceCodeHref: 'https://github.com/katiemhughes/neurodiversity-friendly-eisenhower-matrix/',
+    liveSiteHref: 'https://neurodiversity-friendly-eisenhower-matrix.vercel.app/',
+    tech: [
+      {
+        text: 'ReactJS',
+        link: 'https://react.dev/',
+      },
+      {
+        text: 'Typescript',
+        link: 'https://www.typescriptlang.org/',
+      },
+      {
+        text: 'Jest',
+        link: 'https://jestjs.io/',
+      },
+    ],
+  },
 ];
 
 export default function Projects() {
